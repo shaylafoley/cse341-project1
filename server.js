@@ -36,7 +36,7 @@
          console.log(err);
      }
      else {
-     app.listen(port, () => (console.log(`Datbase is listening and Node running on port ${port}`)));
+     app.listen(port, () => (console.log(`Database is listening and Node running on port ${port}`)));
  }})
 
 
