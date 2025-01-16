@@ -1,0 +1,33 @@
+// LOCALHOST
+### Get all contacts
+GET http://localhost:5173/users
+
+###Get contact by id
+GET http://localhost:5173/users/6781adfecce7b0f0c9dc0816
+
+###Create contact
+POST http://localhost:5173/users HTTP/1.1
+Content-Type: application/json
+ 
+{
+    "firstName":"Ashley",
+    "lastName":"Weaver",
+    "email":"aWeaver@test.com",
+    "favoriteColor":"Brown",
+    "birthday":"06/19/2000"
+}
+
+### PUT contact
+PUT http://localhost:5173/users/678979c4bc6891850641d46d HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Jones",
+    "email":"sJones@test.com",
+    "favoriteColor":"Green",
+    "birthday":"09/11/2003"
+}
+
+### DELETE contact
+DELETE http://localhost:5173/users/678979c4bc6891850641d46d
